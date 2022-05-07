@@ -28,3 +28,4 @@ snarkjs zkey export verificationkey HelloWorld/circuit_final.zkey HelloWorld/ver
 snarkjs zkey export solidityverifier HelloWorld/circuit_final.zkey ../HelloWorldVerifier.sol
 
 cd ../..
+

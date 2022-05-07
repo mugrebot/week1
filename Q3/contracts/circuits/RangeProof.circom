@@ -11,5 +11,16 @@ template RangeProof(n) {
     component low = LessEqThan(n);
     component high = GreaterEqThan(n);
 
-    // [assignment] insert your code here
+// [assignment] insert your code here
+    high.in[0] <== in;
+    high.in[1] <== range[0];
+    low.in[0] <== in;
+    low.in[1] <== range[1];
+
+    out <== low.out * high.out;
 }
+
+//used below to test on https://zkrepl.dev outputs 0 if input is out of the range outputs 1 if inside. 
+//component main { public [ in, range ] } = RangeProof(32);
+
+
